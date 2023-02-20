@@ -77,7 +77,6 @@ memiliki tipe data
 
 * Deklarasi Variabel 
 
-*Membuat Variabel*
 
 * Konstanta 
 1. Digunakan untuk menyimpan data
@@ -85,7 +84,6 @@ memiliki tipe data
 3. Memiliki tipe data
 4. Nilai tetap(tidak dapat diubah)
 
-*Membuat konstanta*
 
 * Tipe  data 
 
