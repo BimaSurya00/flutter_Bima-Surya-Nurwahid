@@ -21,7 +21,6 @@ if (nilai_bool) {
 	//blok kode dijalankan jika nilai_bool adalah true
 } 
 ```
-![Gambar teks editor VS Code](/7_Branching%2C%20Looping%2C%20Function/screenshots/flowchart-if.png)
 
 contoh code penggunaan if
 
@@ -55,7 +54,6 @@ if (nilai_bool) {
 
 ```
 
-![Gambar teks editor VS Code](/7_Branching%2C%20Looping%2C%20Function/screenshots/flowchart-ifelse.png)
 
 contoh code menggunakan if-else
 
