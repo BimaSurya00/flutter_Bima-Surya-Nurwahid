@@ -1,5 +1,5 @@
 void main(){
-  print (hitungNilai('pou'));
+  print (hitungNilai(60));
   // var nilai = hitungNilai('pou');
   // print(nilai);
 }
