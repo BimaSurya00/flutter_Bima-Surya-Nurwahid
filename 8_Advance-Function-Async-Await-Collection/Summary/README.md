@@ -125,7 +125,6 @@ Kumpulan data pada satu tempat
 
 Menyimpan data (elemen) secara berbaris
 
-![Gambar dari materi](/8_Advance%20Function%2C%20Async-Await/screenshots/list.png)
 
 contoh code list
 
@@ -150,7 +149,6 @@ Menyimpan data secara key-value
 
 Key berguna selayaknya index pada list 
 
-![Gambar dari lms alterra](/8_Advance%20Function%2C%20Async-Await/screenshots/map.png)
 
 contoh code map :
 
