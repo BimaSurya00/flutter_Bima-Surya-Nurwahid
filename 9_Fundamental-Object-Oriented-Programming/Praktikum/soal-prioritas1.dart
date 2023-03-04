@@ -18,13 +18,7 @@ class Mobil {
     }
   }
 
-  int totalMuatan() {
-    int totalBerat = 0;
-    for (var i in dataMuatan) {
-      totalBerat = totalBerat + i.beratHewan;
-    }
-    return totalBerat;
-  }
+
 }
 
 void main(List<String> args) {
@@ -45,5 +39,5 @@ void main(List<String> args) {
   mobil.tambahMuatan(motor, 'motor'); //mencoba menambahkan motor, tetapi akan gagal karena kapasitas sudah penuh
 
 
-  print('Total berat muatan adalah ${(mobil.totalMuatan())}');
+  print('muatan mobil: ${mobil.muatan}');
 }
