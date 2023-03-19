@@ -28,17 +28,16 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             const SizedBox(height: 10.0),
-            Icon(Icons.contact_phone, size: 50.0),
+            const Icon(Icons.contact_phone, size: 50.0),
             const SizedBox(height: 10.0),
-            Text('Create New Contact',
-                style:
-                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+            const Text('Create New Contact',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             const SizedBox(height: 10.0),
-            Text(
+            const Text(
                 'A dialog is a type of modal window that appears in front of app content to provide critical information, or prompt for a decision to be made. ',
-                style: const TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15),
                 textAlign: TextAlign.center),
-            Divider(color: Colors.grey, thickness: 1.0),
+            const Divider(color: Colors.grey, thickness: 1.0),
             const SizedBox(height: 10.0),
             TextField(
               controller: nameController,
@@ -53,7 +52,7 @@ class _HomePageState extends State<HomePage> {
             TextField(
               controller: contactController,
               keyboardType: TextInputType.number,
-              maxLength: 10,
+              maxLength: 15,
               decoration: const InputDecoration(
                 hintText: 'Phone Number',
                 border: OutlineInputBorder(
