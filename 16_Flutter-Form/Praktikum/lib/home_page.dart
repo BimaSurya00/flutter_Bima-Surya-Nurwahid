@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:soal_form/contact.dart';
+import 'package:soal_form/picker_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -22,6 +23,16 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         centerTitle: true,
         title: const Text('Contacts'),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) {
+              return pickerPage();
+            },
+          ));
+        },
+        child: Icon(Icons.keyboard_arrow_right),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
