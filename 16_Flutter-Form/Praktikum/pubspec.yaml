@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   dependencies:
   flutter_colorpicker: ^1.0.3
+  file_picker: ^4.0.0
 
 dev_dependencies:
   flutter_test:

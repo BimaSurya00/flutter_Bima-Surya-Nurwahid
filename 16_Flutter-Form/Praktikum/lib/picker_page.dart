@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'home_page.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
+import 'package:file_picker/file_picker.dart';
+import 'dart:io';
 
 class pickerPage extends StatefulWidget {
   const pickerPage({Key? key});
@@ -116,6 +118,29 @@ class _pickerPageState extends State<pickerPage> {
                 decoration: BoxDecoration(
                   color: _selectedColor,
                   borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 20),
+          Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(20),
+                alignment: Alignment.topLeft,
+                child: Title(
+                  color: Colors.blue,
+                  child: const Text(
+                    'File Picker',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 90),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('Show File Picker'),
                 ),
               ),
             ],
