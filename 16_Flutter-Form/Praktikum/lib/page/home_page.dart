@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:soal_form/contact.dart';
-import 'package:soal_form/picker_page.dart';
+import 'package:soal_form/model/contact.dart';
+import 'package:soal_form/page/picker_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -28,11 +28,13 @@ class _HomePageState extends State<HomePage> {
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(
             builder: (context) {
-              return pickerPage();
+              return PickerPage(
+                data: nameController.text,
+              );
             },
           ));
         },
-        child: Icon(Icons.keyboard_arrow_right),
+        child: const Icon(Icons.keyboard_arrow_right),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
