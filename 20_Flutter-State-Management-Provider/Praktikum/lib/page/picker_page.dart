@@ -23,7 +23,7 @@ class _PickerPageState extends State<PickerPage> {
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(
             builder: (context) {
-              return const gridviewpage();
+              return const GridViewPage();
             },
           ));
         },
