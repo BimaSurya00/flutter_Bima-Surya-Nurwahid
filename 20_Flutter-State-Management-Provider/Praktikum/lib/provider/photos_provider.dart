@@ -16,7 +16,7 @@ class PhotosProvider with ChangeNotifier {
         url:
             'https://i.pinimg.com/564x/f9/a6/12/f9a6129b0d10fd385e85a8cc50e25e15.jpg'),
   ];
-67t
+
   List<ImageModel> get data => _dataImage;
 
   get dataImage => null;

@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   TextEditingController nameController = TextEditingController();
   TextEditingController contactController = TextEditingController();
 
-  ContactsProvider contactsProvider = ContactsProvider();
+  // ContactsProvider contactsProvider = ContactsProvider();
 
 
   List<Contact> contacts = List.empty(growable: true);
