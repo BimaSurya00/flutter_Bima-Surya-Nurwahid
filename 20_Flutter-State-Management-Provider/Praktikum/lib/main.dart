@@ -1,19 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:soal_form/page/home_page.dart';
-import 'package:soal_form/provider/photos_provider.dart';
+import 'package:soal_form/page/splash_page.dart';
 
 void main() {
-  runApp(
-    MultiProvider(
-      providers: [
-        ChangeNotifierProvider<PhotosProvider>(
-          create: (_) => PhotosProvider(), 
-        ),
-      ],
-      child: const MyApp(),
-    ),
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -27,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const SplashPage(),
     );
   }
 }

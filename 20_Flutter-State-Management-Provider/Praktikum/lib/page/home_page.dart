@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:soal_form/model/contact.dart';
 import 'package:soal_form/page/picker_page.dart';
-import 'package:soal_form/provider/photos_provider.dart';
-
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,9 +12,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   TextEditingController nameController = TextEditingController();
   TextEditingController contactController = TextEditingController();
-
-  // ContactsProvider contactsProvider = ContactsProvider();
-
 
   List<Contact> contacts = List.empty(growable: true);
 
@@ -83,8 +78,16 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                    onPressed: () {    
-                      
+                    onPressed: () {
+                      String name = nameController.text.trim();
+                      String contact = contactController.text.trim();
+                      if (name.isNotEmpty && contact.isNotEmpty) {
+                        setState(() {
+                          nameController.text = '';
+                          contactController.text = '';
+                          contacts.add(Contact(name: name, contact: contact));
+                        });
+                      }
                     },
                     child: const Text('Save')),
                 ElevatedButton(

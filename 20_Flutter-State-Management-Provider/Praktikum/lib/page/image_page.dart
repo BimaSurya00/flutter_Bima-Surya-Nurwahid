@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/container.dart';
+import 'package:flutter/src/widgets/framework.dart';
 
 class ImagePage extends StatelessWidget {
   final String url;
-  const ImagePage({super.key, required this.url});
+  ImagePage({required this.url});
 
   @override
   Widget build(BuildContext context) {
