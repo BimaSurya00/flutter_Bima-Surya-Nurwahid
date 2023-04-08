@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           Container(
-            height: 150,
+            height: 120,
             padding: EdgeInsets.all(10),
             margin: EdgeInsets.all(10),
             child: Column(
