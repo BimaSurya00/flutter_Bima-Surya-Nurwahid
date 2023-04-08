@@ -1,0 +1,1 @@
+mohon maaf mas jika ada kesalahan soalnya saya ngerjain baru seadanya dan sebisa saya soalnya masih bingung hehe.
