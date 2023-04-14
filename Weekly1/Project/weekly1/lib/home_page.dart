@@ -20,51 +20,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // drawer: Drawer(
-      //   child: ListView(
-      //     children: [
-      //       const DrawerHeader(
-      //         decoration: BoxDecoration(
-      //           color: Colors.blueGrey,
-      //         ),
-      //         child: Text(
-      //           'Drawer Header',
-      //           style: TextStyle(
-      //             color: Colors.white,
-      //             fontSize: 24,
-      //           ),
-      //         ),
-      //       ),
-      //       ListTile(
-      //         title: const Text('Login'),
-      //         onTap: () {
-      //           // Update the state of the app
-      //           // ...
-      //           // Then close the drawer
-      //           Navigator.pop(context);
-      //         },
-      //       ),
-      //       ListTile(
-      //         title: const Text('Contact Us'),
-      //         onTap: () {
-      //           // Update the state of the app
-      //           // ...
-      //           // Then close the drawer
-      //           Navigator.pop(context);
-      //         },
-      //       ),
-      //       ListTile(
-      //         title: const Text('About Us'),
-      //         onTap: () {
-      //           // Update the state of the app
-      //           // ...
-      //           // Then close the drawer
-      //           Navigator.pop(context);
-      //         },
-      //       ),
-      //     ],
-      //   ),
-      // ),
       appBar: AppBar(
         title: const Text('My App'),
         centerTitle: true,
@@ -189,60 +144,6 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          // Container(
-          //   height: 400,
-          //   padding: const EdgeInsets.all(10),
-          //   // color: Colors.green,
-          //   child: Column(
-          //     children: [
-          //       const Text(
-          //         'About Us',
-          //         style: TextStyle(
-          //           fontSize: 20,
-          //           fontWeight: FontWeight.bold,
-          //         ),
-          //       ),
-          //       const SizedBox(height: 10),
-          //       const Text(
-          //         'My Services',
-          //         style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-          //       ),
-          //       const SizedBox(height: 10),
-          //       Row(
-          //         children: [
-          //           Card(
-          //             margin: const EdgeInsets.all(10),
-          //             child: Column(
-          //               children: [
-          //                 Image.network(
-          //                     'https://i.pinimg.com/564x/88/3f/bf/883fbfa148bd2d792c995b3d986c53de.jpg',
-          //                     height: 200,
-          //                     fit: BoxFit.cover),
-          //                 const SizedBox(height: 10),
-          //                 const Text('Bima Surya Nurwahid'),
-          //                 const Text('Flutter Developer'),
-          //               ],
-          //             ),
-          //           ),
-          //           Card(
-          //             margin: const EdgeInsets.all(10),
-          //             child: Column(
-          //               children: [
-          //                 Image.network(
-          //                     'https://i.pinimg.com/564x/88/3f/bf/883fbfa148bd2d792c995b3d986c53de.jpg',
-          //                     height: 200,
-          //                     fit: BoxFit.cover),
-          //                 const SizedBox(height: 10),
-          //                 const Text('Bima Surya Nurwahid'),
-          //                 const Text('Flutter Developer'),
-          //               ],
-          //             ),
-          //           ),
-          //         ],
-          //       ),
-          //     ],
-          //   ),
-          // ),
         ],
       ),
     );
