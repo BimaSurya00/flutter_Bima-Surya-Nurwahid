@@ -20,6 +20,51 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // drawer: Drawer(
+      //   child: ListView(
+      //     children: [
+      //       const DrawerHeader(
+      //         decoration: BoxDecoration(
+      //           color: Colors.blueGrey,
+      //         ),
+      //         child: Text(
+      //           'Drawer Header',
+      //           style: TextStyle(
+      //             color: Colors.white,
+      //             fontSize: 24,
+      //           ),
+      //         ),
+      //       ),
+      //       ListTile(
+      //         title: const Text('Login'),
+      //         onTap: () {
+      //           // Update the state of the app
+      //           // ...
+      //           // Then close the drawer
+      //           Navigator.pop(context);
+      //         },
+      //       ),
+      //       ListTile(
+      //         title: const Text('Contact Us'),
+      //         onTap: () {
+      //           // Update the state of the app
+      //           // ...
+      //           // Then close the drawer
+      //           Navigator.pop(context);
+      //         },
+      //       ),
+      //       ListTile(
+      //         title: const Text('About Us'),
+      //         onTap: () {
+      //           // Update the state of the app
+      //           // ...
+      //           // Then close the drawer
+      //           Navigator.pop(context);
+      //         },
+      //       ),
+      //     ],
+      //   ),
+      // ),
       appBar: AppBar(
         title: const Text('My App'),
         centerTitle: true,
@@ -78,7 +123,8 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           Container(
-            height: 500,
+            height: 400,
+            // color: Colors.lightGreen[80],
             padding: const EdgeInsets.all(10),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -136,100 +182,69 @@ class _HomePageState extends State<HomePage> {
                       },
                     );
                   },
-                  child: const Text('Submit'),
+                  child: const Text(
+                    'Submit',
+                  ),
                 ),
               ],
             ),
           ),
+          // Container(
+          //   height: 400,
+          //   padding: const EdgeInsets.all(10),
+          //   // color: Colors.green,
+          //   child: Column(
+          //     children: [
+          //       const Text(
+          //         'About Us',
+          //         style: TextStyle(
+          //           fontSize: 20,
+          //           fontWeight: FontWeight.bold,
+          //         ),
+          //       ),
+          //       const SizedBox(height: 10),
+          //       const Text(
+          //         'My Services',
+          //         style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+          //       ),
+          //       const SizedBox(height: 10),
+          //       Row(
+          //         children: [
+          //           Card(
+          //             margin: const EdgeInsets.all(10),
+          //             child: Column(
+          //               children: [
+          //                 Image.network(
+          //                     'https://i.pinimg.com/564x/88/3f/bf/883fbfa148bd2d792c995b3d986c53de.jpg',
+          //                     height: 200,
+          //                     fit: BoxFit.cover),
+          //                 const SizedBox(height: 10),
+          //                 const Text('Bima Surya Nurwahid'),
+          //                 const Text('Flutter Developer'),
+          //               ],
+          //             ),
+          //           ),
+          //           Card(
+          //             margin: const EdgeInsets.all(10),
+          //             child: Column(
+          //               children: [
+          //                 Image.network(
+          //                     'https://i.pinimg.com/564x/88/3f/bf/883fbfa148bd2d792c995b3d986c53de.jpg',
+          //                     height: 200,
+          //                     fit: BoxFit.cover),
+          //                 const SizedBox(height: 10),
+          //                 const Text('Bima Surya Nurwahid'),
+          //                 const Text('Flutter Developer'),
+          //               ],
+          //             ),
+          //           ),
+          //         ],
+          //       ),
+          //     ],
+          //   ),
+          // ),
         ],
       ),
     );
   }
 }
-   // Container(
-                  //   height: 120,
-                  //   padding: EdgeInsets.all(10),
-                  //   margin: EdgeInsets.all(10),
-                  //   child: Column(
-                  //     children: [
-                  //       Text(
-                  //         'Contact Us',
-                  //         style: TextStyle(
-                  //             fontSize: 20,
-                  //             fontWeight: FontWeight.bold,
-                  //             color: Colors.black),
-                  //       ),
-                  //       SizedBox(
-                  //         height: 10,
-                  //       ),
-                  //       Text(
-                  //         'Need to get in touch with us? Either fill out the form with your inquiry or find the department you like to contact below.',
-                  //         style: TextStyle(color: Colors.black, fontSize: 15),
-                  //       ),
-                  //     ],
-                  //   ),
-                  // ),
-                  // Container(
-                  //   height: 500,
-                  //   padding: EdgeInsets.all(10),
-                  //   child: Column(
-                  //     mainAxisAlignment: MainAxisAlignment.center,
-                  //     crossAxisAlignment: CrossAxisAlignment.start,
-                  //     children: [
-                  //       const Text('Name'),
-                  //       TextField(
-                  //         controller: nameController,
-                  //         decoration: InputDecoration(
-                  //             border: const OutlineInputBorder(),
-                  //             fillColor: Colors.grey[300],
-                  //             filled: true),
-                  //       ),
-                  //       const SizedBox(height: 20),
-                  //       const Text('Email'),
-                  //       TextField(
-                  //         controller: emailController,
-                  //         decoration: InputDecoration(
-                  //             border: const OutlineInputBorder(),
-                  //             fillColor: Colors.grey[300],
-                  //             filled: true),
-                  //       ),
-                  //       const SizedBox(height: 20),
-                  //       const Text('What we can help you with?'),
-                  //       TextField(
-                  //         controller: msgController,
-                  //         minLines: 3,
-                  //         keyboardType: TextInputType.multiline,
-                  //         maxLines: null,
-                  //         decoration: InputDecoration(
-                  //             border: const OutlineInputBorder(),
-                  //             fillColor: Colors.grey[300],
-                  //             filled: true),
-                  //       ),
-                  //       const SizedBox(height: 20),
-                  //       ElevatedButton(
-                  //         onPressed: () {
-                  //           setState(
-                  //             () {
-                  //               name = nameController.text;
-                  //               email = emailController.text;
-                  //               msg = msgController.text;
-
-                  //               showDialog(
-                  //                 context: context,
-                  //                 builder: (context) => AlertDialog(
-                  //                   title: Column(
-                  //                     children: [
-                  //                       Text(name),
-                  //                       Text(email),
-                  //                     ],
-                  //                   ),
-                  //                 ),
-                  //               );
-                  //             },
-                  //           );
-                  //         },
-                  //         child: const Text('Submit'),
-                  //       ),
-                  //     ],
-                  //   ),
-                  // ),
