@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:soal_form/page/splash_page.dart';
+import 'package:soal_form/view/splash_page.dart';
 
 void main() {
   runApp(const MyApp());

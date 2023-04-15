@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:soal_form/page/gridview_page.dart';
+import 'package:soal_form/view/gridview_page.dart';
 import 'package:soal_form/widget/color_picker.dart';
 import 'package:soal_form/widget/date_picker.dart';
 

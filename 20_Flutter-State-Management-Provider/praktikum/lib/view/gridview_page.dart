@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:soal_form/page/image_page.dart';
-import 'package:soal_form/provider/photos_provider.dart';
+import 'package:soal_form/view/image_page.dart';
+import 'package:soal_form/view_model/photos_view_model.dart';
 
 class GridViewPage extends StatefulWidget {
   const GridViewPage({Key? key}) : super(key: key);

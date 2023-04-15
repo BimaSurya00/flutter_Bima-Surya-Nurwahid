@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:soal_form/page/home_page.dart';
+import 'package:soal_form/view/home_page.dart';
 import 'dart:async';
 
 class SplashPage extends StatefulWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:soal_form/model/contact.dart';
-import 'package:soal_form/page/picker_page.dart';
+import 'package:soal_form/model/contact_model.dart';
+import 'package:soal_form/view/picker_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
