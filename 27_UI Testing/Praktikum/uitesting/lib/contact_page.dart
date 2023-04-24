@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 
 class ContactPage extends StatefulWidget {
   const ContactPage({super.key});
@@ -18,9 +17,9 @@ class _ContactPageState extends State<ContactPage> {
       ),
       body: Container(
         child: Column(
-          children: [
-            const Text('Create New Contact'),
-            const Text('Daftar kontak'),
+          children: const [
+            Text('Create New Contact'),
+            Text('Daftar kontak'),
           ],
         ),
       ),
